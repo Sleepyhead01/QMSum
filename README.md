@@ -29,7 +29,7 @@ Make a python virtual env and install the dependencies from `requirements.txt`
 ### MPT-Storywriter
 - Can process up to 80k tokens (Input + Generation)
 
-### `Generating with MPT-Storywriter`
+#### Generating with MPT-Storywriter
 
 Set the  device map [here](https://github.com/Sleepyhead01/QMSum/blob/570abc33308f729ec42c1f6bb71d30386344185d/mpt-storywriter/mpt_generate.py#L58) according to the number of GPUs available in a node and parts of the model that you want to offload to cpu.
 
@@ -38,7 +38,7 @@ Write a job submission file by referring to [this](https://github.com/Sleepyhead
 ### long-former
 - Can process up to ~100k tokens (Input + Generation)
 
-### `Generating with long-former`
+#### Generating with long-former
 
 The default script runs long former with instructions. To run without instructions uncomment [this](https://github.com/Sleepyhead01/QMSum/blob/9cd4684abdb869a743aa2b68b11ad46dbaad771f/long-former/generate_summary.py#L64) line and comment the next line. 
 
@@ -47,7 +47,7 @@ Write a job submission file by referring to [this](https://github.com/Sleepyhead
 ### LLaMA Adapter
 - Can process up to 2k tokens (Input + Generation)
 
-### `Generating with LLaMA Adapter`
+#### `Generating with LLaMA Adapter`
 
 Clone the LLaMA Adapter [repo](https://github.com/OpenGVLab/LLaMA-Adapter)
 
