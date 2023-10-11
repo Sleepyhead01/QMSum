@@ -40,11 +40,24 @@ Write a job submission file by referring to [this](https://github.com/Sleepyhead
 
 ### `Generating with long-former`
 
-The default script runs long former with instruction. To run without instructions uncomment [this](https://github.com/Sleepyhead01/QMSum/blob/9cd4684abdb869a743aa2b68b11ad46dbaad771f/long-former/generate_summary.py#L64) line and comment the next line. 
+The default script runs long former with instructions. To run without instructions uncomment [this](https://github.com/Sleepyhead01/QMSum/blob/9cd4684abdb869a743aa2b68b11ad46dbaad771f/long-former/generate_summary.py#L64) line and comment the next line. 
 
 Write a job submission file by referring to [this](https://github.com/Sleepyhead01/QMSum/blob/main/mpt-storywriter/inf_gen.sh).
 
 ### LLaMA Adapter
+- Can process up to 2k tokens (Input + Generation)
+
+### `Generating with LLaMA Adapter`
+
+Clone the LLaMA Adapter [repo](https://github.com/OpenGVLab/LLaMA-Adapter)
+
+Download LLaMA weights and LLaMa adapter weights.
+
+Add the `generate_summary.py` script to the LLaMA-Adapter folder and replace the model weights path.
+
+### LongLLaMA
+
+Run `generate.py`
 
 ## Results
 
