@@ -23,6 +23,8 @@ Token distribution of summary
 Code for this analysis present [here](https://github.com/Sleepyhead01/QMSum/blob/main/mpt-storywriter/token_len_analysis.py)
 
 ## Experiments
+Python 3.8 is recommended.
+Make a python virtual env and install the dependencies from `requirements.txt`
 
 ### MPT-Storywriter
 - Can process up to 80k tokens (Input + Generation)
@@ -33,6 +35,14 @@ Set the  device map [here](https://github.com/Sleepyhead01/QMSum/blob/570abc3330
 
 Write a job submission file by referring to [this](https://github.com/Sleepyhead01/QMSum/blob/main/mpt-storywriter/inf_gen.sh).
 
+### long-former
+- Can process up to ~100k tokens (Input + Generation)
+
+`Running long-former`
+
+Write a job submission file by referring to [this](https://github.com/Sleepyhead01/QMSum/blob/main/mpt-storywriter/inf_gen.sh).
+
+### LLaMA Adapter
 
 ## Results
 
