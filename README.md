@@ -20,10 +20,19 @@ Token distribution of summary
 
 *Note: These values are with respect to `EleutherAI/gpt-neox-20b` tokenizer
 
+Code for this analysis present [here](https://github.com/Sleepyhead01/QMSum/blob/main/mpt-storywriter/token_len_analysis.py)
 
 ## Experiments
 
-This is the methodology section.
+### MPT-Storywriter
+- Can process up to 80k tokens (Input + Generation)
+
+`Running MPT-Storywriter`
+
+Set the  device map [here](https://github.com/Sleepyhead01/QMSum/blob/570abc33308f729ec42c1f6bb71d30386344185d/mpt-storywriter/mpt_generate.py#L58) according to the number of GPUs available in a node and parts of the model that you want to offload to cpu.
+
+Write a job submission file by referring to [this](https://github.com/Sleepyhead01/QMSum/blob/main/mpt-storywriter/inf_gen.sh).
+
 
 ## Results
 
